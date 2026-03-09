@@ -29,6 +29,18 @@ npm run dev
 
 ## Quick Start
 
+### Props
+model
+config
+tag
+editor
+manual
+
+### Methods
+initializeEditor()
+destroy()
+getEditor()
+
 ### Basic Usage
 Use the `FroalaEditor` component in your Svelte file:
 
