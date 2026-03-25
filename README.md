@@ -46,13 +46,31 @@ Use the `FroalaEditor` component in your Svelte file:
 
 ```svelte
 <script>
+  // Import the Froala wrapper component
   import FroalaEditor from "svelte-froala-wysiwyg";
 
+  // Load Froala's bundled editor styles (toolbar, editor UI)
+  import 'froala-editor/css/froala_editor.pkgd.min.css';
+
+  // Load Froala's content styles (applies inside the editable area)
+  import 'froala-editor/css/froala_style.css';
+
+  // Reactive variable holding the editor's HTML content
+  // bind:model keeps this in sync with the editor in real time
   let htmlContent = "<p>Hello, Froala!</p>";
 </script>
 
+<!--
+  FroalaEditor component
+  - bind:model: two-way binding — editor changes update htmlContent and vice versa
+-->
 <FroalaEditor bind:model={htmlContent} />
 
+<!--
+  Live preview of the editor's HTML output
+  - {@html} renders the raw HTML string returned by the editor
+  - Wrap in a sandboxed container to scope Froala's content styles
+-->
 <div class="preview">
   {@html htmlContent}
 </div>

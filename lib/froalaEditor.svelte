@@ -1,8 +1,6 @@
 <script>
   import { onMount, onDestroy, createEventDispatcher } from "svelte";
   import FroalaEditor from "froala-editor";
-  import "froala-editor/css/froala_editor.pkgd.min.css";
-  import "froala-editor/js/plugins.pkgd.min.js";
 
   /*
   Public props

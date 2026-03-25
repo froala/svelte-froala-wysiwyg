@@ -1,5 +1,7 @@
 <script>
   import FroalaEditor from "../lib/FroalaEditor.svelte";
+  import 'froala-editor/css/froala_editor.pkgd.min.css';
+  import 'froala-editor/css/froala_style.css';
 
   // 1. Basic & Two-way Binding
   let basicHtml = "<p>Hello Froala! Try editing this content.</p>";
