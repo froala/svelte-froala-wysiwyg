@@ -1,10 +1,19 @@
 {
   "name": "svelte-froala-wysiwyg",
-  "version": "1.0.0",
+  "version": "5.3.0",
   "type": "module",
   "description": "Svelte wrapper for Froala WYSIWYG editor",
   "keywords": ["svelte", "froala", "wysiwyg", "editor"],
   "license": "MIT",
+  "author": "Froala",
+  "homepage": "https://github.com/froala/svelte-froala-wysiwyg#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/froala/svelte-froala-wysiwyg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/froala/svelte-froala-wysiwyg/issues"
+  },
 
   "svelte": "lib/index.js",
   "main": "dist/index.umd.js",
@@ -27,12 +36,13 @@
     "dev": "vite",
     "build": "vite build && vite build --config vite.cdn.config.js",
     "build:npm": "vite build",
-    "build:cdn": "vite build --config vite.cdn.config.js"
+    "build:cdn": "vite build --config vite.cdn.config.js",
+    "prepublishOnly": "npm run build"
   },
 
   "peerDependencies": {
     "svelte": "^5.0.0",
-    "froala-editor": "^5.0.1"
+    "froala-editor": "^5.3.0"
   },
 
   "devDependencies": {
