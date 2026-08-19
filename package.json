@@ -1,6 +1,6 @@
 {
   "name": "svelte-froala-wysiwyg",
-  "version": "5.3.1",
+  "version": "5.4.0",
   "type": "module",
   "description": "Svelte wrapper for Froala WYSIWYG editor",
   "keywords": ["svelte", "froala", "wysiwyg", "editor"],
@@ -42,7 +42,7 @@
 
   "peerDependencies": {
     "svelte": "^5.0.0",
-    "froala-editor": "^5.3.1"
+    "froala-editor": "^5.4.0"
   },
 
   "devDependencies": {
